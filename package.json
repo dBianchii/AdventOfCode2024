@@ -1,0 +1,14 @@
+{
+  "name": "AdventOfCode2024",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.2"
+  },
+  "dependencies": {
+    "typescript": "^5.5.2"
+  }
+}
