@@ -5,10 +5,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "fetch": "bun run fetcher.ts"
+  },
   "devDependencies": {
     "@types/node": "^20.10.2"
   },
   "dependencies": {
+    "readline-sync": "^1.4.10",
     "typescript": "^5.5.2"
   }
 }
