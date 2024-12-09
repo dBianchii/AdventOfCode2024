@@ -1,6 +1,8 @@
 import readline from "readline";
 import fs from "fs";
 
+const YEAR = 2024;
+
 async function getInput(year: number, day: number) {
   const url = `https://adventofcode.com/${year}/day/${day}/input`;
   const response = await fetch(url, {
@@ -12,7 +14,7 @@ async function getInput(year: number, day: number) {
 }
 
 async function getOrWriteInput(day: number) {
-  const input = await getInput(2024, day);
+  const input = await getInput(YEAR, day);
   const dir = `Day${day}`;
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
