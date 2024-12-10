@@ -19,7 +19,7 @@ function isSafe(report: number[]) {
     }
 
     if (!isSafe) return false;
-    const increaseOrDecreasedBy = num - prev;
+    const increaseOrDecreasedBy = num - prev!;
     prev = num;
     if (
       !(

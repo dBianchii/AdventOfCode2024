@@ -15,7 +15,7 @@ while (left.length > 0 || right.length > 0) {
   const leftIdx = left.findIndex((l) => l === minimumInLeft);
   const rightIdx = right.findIndex((r) => r === minimumInRight);
 
-  const distance = Math.abs(left[leftIdx] - right[rightIdx]);
+  const distance = Math.abs(left[leftIdx]! - right[rightIdx]!);
   left.splice(leftIdx, 1);
   right.splice(rightIdx, 1);
   totalDistance += distance;

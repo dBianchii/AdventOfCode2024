@@ -22,7 +22,7 @@ for (const line of lines) {
     }
 
     if (!isSafe) continue;
-    const increaseOrDecreasedBy = num - prev;
+    const increaseOrDecreasedBy = num - prev!;
     prev = num;
     if (
       !(
